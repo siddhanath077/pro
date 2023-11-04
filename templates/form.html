@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is the Form</title>
+</head>
+<body>
+    <h1>This is the Form</h1>
+
+    <div class="calculate">
+        <h1>Calculate Average Marks</h1>
+
+        <!-- Main Input form Receiving Query to our ML -->
+        <form action="{{url_for('form')}}" method="post">
+
+            <input type="text" name="maths" placeholder="Maths" required="required">
+            <input type="text" name="science" placeholder="Science" required="required">
+            <input type="text" name="history" placeholder="History" required="required">
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Calculate</button>
+
+        </form>
+
+        <br>
+        The average marks is {{score}}
+        <br>
+    </div>
+</body>
+</html>
